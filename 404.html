@@ -10,7 +10,7 @@
                 const redirectLocation = window.location.href.replace(
                     "alfredoelectronics.github.io",
                     "alfredosys.com"
-                );
+                ).replace("https", "http");
                 document.getElementsByTagName("body")[0].innerHTML = "Redirecting to <a href=\"" + redirectLocation + "\">" + redirectLocation + "</a>...";
                 window.location.href = redirectLocation;
             }
