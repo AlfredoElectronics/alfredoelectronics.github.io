@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting</title>
+    <script>
+        window.onload = () => {
+            const destination = window.location.href;
+            if (window.location.href.includes("alfredoelectronics.github.io")) {
+                const redirectLocation = window.location.href.replace(
+                    "alfredoelectronics.github.io",
+                    "alfredosys.com"
+                );
+                document.getElementsByTagName("body")[0].innerHTML = "Redirecting to <a href=\"" + redirectLocation + "\">" + redirectLocation + "</a>...";
+                window.location.href = redirectLocation;
+            }
+        }
+    </script>
+</head>
+<body></body>
+</html>
